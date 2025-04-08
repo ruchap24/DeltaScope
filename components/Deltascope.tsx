@@ -35,7 +35,7 @@ const Deltascope = () => {
     return (
       <tr key={index}>
         <td className="w-8 text-right pr-2 text-gray-500">·</td>
-        <td className="pl-2">{part.value}</td>
+        <td className="pl-2 text-white">{part.value}</td>
       </tr>
     );
   };
