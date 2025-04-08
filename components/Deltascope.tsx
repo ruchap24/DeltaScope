@@ -18,16 +18,16 @@ const Deltascope = () => {
   const renderDiffLine = (part: Change, index: number) => {
     if (part.added) {
       return (
-        <tr key={index} className="bg-green-100">
-          <td className="w-8 bg-green-300 text-right pr-2 text-gray-500">+</td>
+        <tr key={index} className="bg-green-300">
+          <td className="w-8 bg-green-500 text-right pr-2 text-gray-500">+</td>
           <td className="pl-2 text-black">{part.value}</td>
         </tr>
       );
     }
     if (part.removed) {
       return (
-        <tr key={index} className="bg-red-100">
-          <td className="w-8 bg-red-300 text-right pr-2 text-gray-500">-</td>
+        <tr key={index} className="bg-red-300">
+          <td className="w-8 bg-red-500 text-right pr-2 text-gray-500">-</td>
           <td className="pl-2 text-black">{part.value}</td>
         </tr>
       );
@@ -45,7 +45,7 @@ const Deltascope = () => {
       <h1 className="text-3xl font-bold text-center mb-8 text-gray-200">Delta Scope</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div className="flex flex-col group">
-          <label className="text-sm font-medium text-gray-300 mb-2 text-center">Original Text</label>
+          <label className="text-l font-bold text-gray-300 mb-4 text-center">Original Text</label>
           <div className="relative">
             <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-900 via-fuchsia-800 to-purple-700 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-gradient-x"></div>
             <textarea
@@ -57,7 +57,7 @@ const Deltascope = () => {
           </div>
         </div>
         <div className="flex flex-col group">
-          <label className="text-sm font-medium text-gray-300 mb-2 text-center">Modified Text</label>
+          <label className="text-l font-bold text-gray-300 mb-4 text-center">Modified Text</label>
           <div className="relative">
             <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-900 via-fuchsia-800 to-purple-700 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-gradient-x"></div>
             <textarea
