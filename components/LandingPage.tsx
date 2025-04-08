@@ -65,7 +65,7 @@ export default function LandingPage() {
             <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/10 via-transparent to-fuchsia-500/10 animate-pulse"></div>
             <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent animate-shine"></div>
             <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-fuchsia-500 to-transparent animate-shine-reverse"></div>
-            <img src="/app-preview.jpg" alt="App Preview" className="relative w-full h-auto" />
+            <img src="/app-preview.png" alt="App Preview" className="relative w-full h-auto" />
           </div>
         </div>
 
