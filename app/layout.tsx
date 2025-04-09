@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Diffchecker",
+  title: "DeltaScope",
   description: "Crated with <3 by Rucha",
 };
 
