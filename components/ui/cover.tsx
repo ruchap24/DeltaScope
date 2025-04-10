@@ -30,7 +30,7 @@ export const Cover = ({
       );
       setBeamPositions(positions);
     }
-  }, [ref.current]);
+  }, []);
 
   return (
     <div
@@ -70,22 +70,7 @@ export const Cover = ({
               }}
               className="w-[200%] h-full flex"
             >
-              {/* <SparklesCore
-                background="transparent"
-                minSize={0.4}
-                maxSize={1}
-                particleDensity={500}
-                className="w-full h-full"
-                particleColor="#FFFFFF"
-              />
-              <SparklesCore
-                background="transparent"
-                minSize={0.4}
-                maxSize={1}
-                particleDensity={500}
-                className="w-full h-full"
-                particleColor="#FFFFFF"
-              /> */}
+            
             </motion.div>
           </motion.div>
         )}
