@@ -3,6 +3,8 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useRouter } from "next/navigation";
+import { Cover } from "@/components/ui/cover";
+import { Coverr } from "./ui/Coverr";
 
 export default function LandingPage() {
   const router = useRouter();
@@ -13,6 +15,7 @@ export default function LandingPage() {
       <nav className="flex items-center justify-between px-12 py-4">
         <div className="flex items-center gap-2">
           <div className="flex items-center">
+          <Cover><span className="inline-flex items-center bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-400">
             <svg className="w-7 h-7 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9 3H5C3.89543 3 3 3.89543 3 5V9C3 10.1046 3.89543 11 5 11H9C10.1046 11 11 10.1046 11 9V5C11 3.89543 10.1046 3 9 3Z" stroke="white" strokeWidth="2"/>
               <path d="M19 3H15C13.8954 3 13 3.89543 13 5V9C13 10.1046 13.8954 11 15 11H19C20.1046 11 21 10.1046 21 9V5C21 3.89543 20.1046 3 19 3Z" stroke="white" strokeWidth="2"/>
@@ -20,6 +23,8 @@ export default function LandingPage() {
               <path d="M19 13H15C13.8954 13 13 13.8954 13 15V19C13 20.1046 13.8954 21 15 21H19C20.1046 21 21 20.1046 21 19V15C21 13.8954 20.1046 13 19 13Z" stroke="white" strokeWidth="2"/>
             </svg>
             <span className="text-white text-3xl font-bold">Delta Scope</span>
+            </span>
+          </Cover>
           </div>
         </div>
 
@@ -45,7 +50,8 @@ export default function LandingPage() {
             🔒 100% Private & Secure code Checking
           </Badge>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
-          Magnify the Differences
+          Magnify the Differences with 
+          <Coverr><span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-400">Delta Scope</span></Coverr>
           </h1>
           <p className="text-gray-400 text-lg">
           A powerful diff tool that highlights every detail with clarity while ensuring complete privacy.
